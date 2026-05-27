@@ -117,16 +117,41 @@
   margin-block-end: 25px;
 }
 
-.filter_brightness { filter: brightness(110%); }
-.filter_opacity { filter: opacity(0.9); }
-.filter_hue-rotate { filter: hue-rotate(-10deg); }
-.filter_sepia { filter: sepia(95%); }
-.filter_invert { filter: invert(0.10); }
-.filter_grayscale { filter: grayscale(1.0); }
-.filter_blur { filter: blur(0.02rem); }
-.filter_multy { filter: sepia(1) hue-rotate(264deg) saturate(289%); }
+.filter_brightness {
+  filter: brightness(110%);
+}
 
-.sparks { opacity: 0; }
+.filter_opacity {
+  filter: opacity(0.9);
+}
+
+.filter_hue-rotate {
+  filter: hue-rotate(-10deg);
+}
+
+.filter_sepia {
+  filter: sepia(95%);
+}
+
+.filter_invert {
+  filter: invert(0.10);
+}
+
+.filter_grayscale {
+  filter: grayscale(1.0);
+}
+
+.filter_blur {
+  filter: blur(0.02rem);
+}
+
+.filter_multy {
+  filter: sepia(1) hue-rotate(264deg) saturate(289%);
+}
+
+.sparks {
+  opacity: 0;
+}
 
 .button_block {
   display: flex;
@@ -134,8 +159,15 @@
   gap: 7px;
 }
 
-.floppy_svg { width: 24px; height: 24px; }
-.dialog_floppy_svg { width: 50px; height: 50px; }
+.floppy_svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dialog_floppy_svg {
+  width: 50px;
+  height: 50px;
+}
 
 .card__like-button {
   padding-block: 8px;
@@ -162,7 +194,6 @@
   mix-blend-mode: difference;
 }
 
-/* ===== БАЗОВЫЕ СТИЛИ КНОПОК (как у коллеги) ===== */
 .button {
   position: relative;
   display: flex;
@@ -219,7 +250,6 @@
   padding: 0 20px;
 }
 
-/* ===== СТИЛИ ДИАЛОГА ===== */
 .dialog_description {
   display: flex;
   align-items: center;
@@ -290,6 +320,7 @@ body:has(.floppy_dialog[open]) {
 }
 
 @media (width <= 375px) {
+
   .main,
   .header {
     width: 100%;
