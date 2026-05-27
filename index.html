@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header headre_size">
+    <header class="header header_size">
       <h1 class="header_title">&lt;/html&gt;</h1>
       <p class="header_subtitle">закрывающий тег</p>
     </header>
@@ -50,7 +50,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -82,7 +82,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -114,7 +114,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -146,7 +146,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -178,7 +178,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -210,7 +210,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -242,7 +242,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -274,7 +274,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text decorated_button_text">Like</span>
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>  
@@ -285,7 +285,7 @@
       <button
         class="save_button decorated_button"
         type="button"
-        onclick="window['floppy_dialog'].showModal()"
+        onclick="window['floppy_dialog'].showModal(); return false;"
         aria-controls="floppy_dialog"
       >
         <svg
@@ -295,11 +295,11 @@
         >
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="decorated_button_text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
 
     </main>
-    <!-- fix -->
+
     <dialog id="floppy_dialog" class="floppy_dialog">
       <div class="dialog_description">
         <svg
@@ -314,9 +314,9 @@
       <button 
         type="button"
         class="dialog_button decorated_button"
-        onclick="window['floppy_dialog'].close()"
+        onclick="window['floppy_dialog'].close(); return false;"
       >
-        <span class="decorated_button_text">OK</span>
+        <span class="button__text">OK</span>
       </button>
     </dialog>
 
