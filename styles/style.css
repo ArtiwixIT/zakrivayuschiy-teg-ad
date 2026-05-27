@@ -222,7 +222,7 @@ hello, by Artiwix :D
   display: flex;
 }
 
-.decorated_button_text {
+.button__text {
     font-size: var(--button-font-size);
     mix-blend-mode: difference;
     margin-right: 5px;
@@ -250,7 +250,6 @@ hello, by Artiwix :D
   translate: 0%;
 }
 
-/* ===== ДИАЛОГ: ИСПРАВЛЕННЫЕ СТИЛИ ===== */
 .floppy_dialog {
   display: none;
   width: clamp(341px, calc(336.775px + 1.127vw), 353px);
@@ -305,7 +304,6 @@ body:has(.floppy_dialog[open]) {
 
 .article_image {
   display: block;
-
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -333,7 +331,6 @@ body:has(.floppy_dialog[open]) {
   .header {
     margin-top: 27vw;
     margin-bottom: 28vw;
-        /* aspect-ratio: 235 / 109; */
     block-size: 325px;
   }
 
@@ -364,7 +361,7 @@ body:has(.floppy_dialog[open]) {
     height: 32px;
   }
 
-  .decorated_button_text {
+  .button__text {
     margin-right: 2px;
     margin-bottom: 4px;
   }

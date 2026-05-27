@@ -282,10 +282,11 @@
         </li>
       </ul>
 
+      <!-- Кнопка «Сохранить на память» — ИСПРАВЛЕНА -->
       <button
         class="save_button decorated_button"
         type="button"
-        onclick="window['floppy_dialog'].showModal(); return false;"
+        onclick="event.preventDefault(); event.stopPropagation(); window['floppy_dialog'].showModal();"
         aria-controls="floppy_dialog"
       >
         <svg
@@ -300,6 +301,7 @@
 
     </main>
 
+    <!-- Диалог — ИСПРАВЛЕН -->
     <dialog id="floppy_dialog" class="floppy_dialog">
       <div class="dialog_description">
         <svg
@@ -314,7 +316,7 @@
       <button 
         type="button"
         class="dialog_button decorated_button"
-        onclick="window['floppy_dialog'].close(); return false;"
+        onclick="event.preventDefault(); event.stopPropagation(); window['floppy_dialog'].close();"
       >
         <span class="button__text">OK</span>
       </button>
