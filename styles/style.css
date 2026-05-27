@@ -268,7 +268,7 @@ hello, by Artiwix :D
 }
 
 .floppy_dialog[open]::backdrop {
-  background-color: rgb(0 0 0 / 75%);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 body:has(.floppy_dialog[open]) {

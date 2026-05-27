@@ -300,7 +300,6 @@
 
     </main>
 
-    <!-- Диалог — ИСПРАВЛЕН -->
     <dialog id="floppy_dialog" class="floppy_dialog">
       <div class="dialog_description">
         <svg
@@ -312,14 +311,13 @@
         </svg>
         <p class="dialog_label">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form method="dialog">
-        <button 
-          type="submit"
-          class="dialog_button decorated_button"
-        >
-          <span class="button__text decorated_button_text">OK</span>
-        </button>
-      </form>
+      <button 
+        type="button"
+        class="dialog_button decorated_button"
+        onclick="window['floppy_dialog'].close()"
+      >
+        <span class="button__text decorated_button_text">OK</span>
+      </button>
     </dialog>
 
     <script src="./scripts/like.js"></script>
