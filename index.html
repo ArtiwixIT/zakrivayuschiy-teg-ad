@@ -50,7 +50,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -82,7 +82,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -114,7 +114,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -146,7 +146,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -178,7 +178,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -210,7 +210,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -242,7 +242,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -274,7 +274,7 @@
                   </svg>
                 </button>
                 <button type="button" class="card__like-button decorated_button">
-                  <span class="button__text">Like</span>
+                  <span class="button__text decorated_button_text">Like</span>
                 </button>
               </div>
             </div>  
@@ -282,11 +282,10 @@
         </li>
       </ul>
 
-      <!-- Кнопка «Сохранить на память» — ИСПРАВЛЕНА -->
       <button
         class="save_button decorated_button"
         type="button"
-        onclick="event.preventDefault(); event.stopPropagation(); window['floppy_dialog'].showModal();"
+        onclick="window['floppy_dialog'].showModal()"
         aria-controls="floppy_dialog"
       >
         <svg
@@ -296,7 +295,7 @@
         >
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text decorated_button_text">Сохранить на память</span>
       </button>
 
     </main>
@@ -313,13 +312,14 @@
         </svg>
         <p class="dialog_label">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button 
-        type="button"
-        class="dialog_button decorated_button"
-        onclick="event.preventDefault(); event.stopPropagation(); window['floppy_dialog'].close();"
-      >
-        <span class="button__text">OK</span>
-      </button>
+      <form method="dialog">
+        <button 
+          type="submit"
+          class="dialog_button decorated_button"
+        >
+          <span class="button__text decorated_button_text">OK</span>
+        </button>
+      </form>
     </dialog>
 
     <script src="./scripts/like.js"></script>
