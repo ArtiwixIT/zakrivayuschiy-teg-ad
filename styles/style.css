@@ -274,7 +274,6 @@ hello, by Artiwix :D
 body:has(.floppy_dialog[open]) {
   overflow: hidden;
 }
-/* ===== КОНЕЦ СТИЛЕЙ ДИАЛОГА ===== */
 
 .dialog_description {
   display: flex;
