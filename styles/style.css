@@ -90,10 +90,8 @@
 
 .modal__icon {
   flex-shrink: 0;
-  /* inline-size: 39px; */
-  /* block-size: 39px; */
-  width: 39px;
-  height: 39px;
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .modal__button {
@@ -338,7 +336,6 @@
 .button__icon {
   block-size: 22px;
   inline-size: 22px;
-  fill: currentColor;
 }
 
 .like-icon {
@@ -346,6 +343,7 @@
   inline-size: 39px;
 }
 
+/* 376 взято так как в фигме на 375 уже стоят определенные стили, а при использовании width <= 375px 375 все еще включает в себя стили для значений больше 375 ???? */
 @media (width < 376px) {
   .modal {
     padding: 28px 34px 28px 40px;
