@@ -90,8 +90,10 @@
 
 .modal__icon {
   flex-shrink: 0;
-  inline-size: 39px;
-  block-size: 39px;
+  /* inline-size: 39px; */
+  /* block-size: 39px; */
+  width: 39px;
+  height: 39px;
 }
 
 .modal__button {
@@ -336,6 +338,7 @@
 .button__icon {
   block-size: 22px;
   inline-size: 22px;
+  fill: currentColor;
 }
 
 .like-icon {

@@ -57,7 +57,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;/HTML&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-grayscale"
                 src="./images/auto1.png"
                 alt="BIG BUS CAR"
               />
@@ -124,7 +124,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;CSS&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-multiple"
                 src="./images/auto2.png"
                 alt="BIG BUS CAR"
               />
@@ -196,7 +196,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;desigions&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-hue-rotate"
                 src="./images/auto3.png"
                 alt="BIG BUS CAR"
               />
@@ -263,7 +263,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;care&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-saturate"
                 src="./images/auto4.png"
                 alt="BIG BUS CAR"
               />
@@ -334,7 +334,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;support&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-invert"
                 src="./images/auto5.png"
                 alt="BIG BUS CAR"
               />
@@ -406,7 +406,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;lifes-style: none;&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-sepia"
                 src="./images/auto6.png"
                 alt="BIG BUS CAR"
               />
@@ -475,7 +475,7 @@
             <div class="card__img-wrapper">
               <span class="card__img-label">&lt;experience&gt;</span>
               <img
-                class="card__img"
+                class="card__img filter-blur"
                 src="./images/bus.png"
                 alt="BIG BUS CAR"
               />
@@ -614,12 +614,12 @@
       </ul>
       <button
         type="button"
-        onclick="window.modal.showModal();"
+        onclick="document.getElementById('modal').showModal()"
         aria-controls="modal"
         class="button button--save"
       >
         <svg class="button__icon" viewBox="0 0 29 28">
-          <use href="svg/floppy.svg#floppy" />
+          <use href="svg/floppy.svg" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -627,15 +627,17 @@
     <dialog class="modal" id="modal">
       <div class="modal__content">
         <svg class="modal__icon" viewBox="0 0 29 28">
-          <use href="svg/floppy.svg#floppy" />
+          <use href="svg/floppy.svg" />
         </svg>
-        <p>Вставьте дискету,чтобы продолжить</p>
+        <p>Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form method="dialog">
-        <button type="submit" class="button modal__button">
-          <span class="button__text">ок</span>
-        </button>
-      </form>
+      <button 
+        type="button" 
+        class="button modal__button"
+        onclick="document.getElementById('modal').close()"
+      >
+        <span class="button__text">ок</span>
+      </button>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
