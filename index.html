@@ -270,14 +270,14 @@
         </svg>
         <p class="dialog_label">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form method="dialog">
-        <button 
-          type="submit"
-          class="dialog_button button"
-        >
-          <span class="button__text">OK</span>
-        </button>
-      </form>
+      <!-- Убираем form method="dialog", используем простой onclick -->
+      <button 
+        type="button"
+        class="dialog_button button"
+        onclick="window['floppy_dialog'].close()"
+      >
+        <span class="button__text">OK</span>
+      </button>
     </dialog>
 
     <script src="./scripts/like.js"></script>
